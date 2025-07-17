@@ -43,14 +43,7 @@ const Navbar = ({ user = {}, onLogout }) => {
 
         {/* Right - User Controls */}
         <div className="flex items-center gap-4">
-          <button
-            className="p-2 text-gray-600 hover:text-purple-500 transition-colors duration-300 hover:bg-purple-50 rounded-full"
-            onClick={() => navigate("/profile")}
-            aria-label="Settings"
-          >
-            <Settings className="w-5 h-5" />
-          </button>
-
+        
           {/* User Dropdown */}
           <div ref={menuRef} className="relative">
             <button

@@ -9,7 +9,7 @@ const TOKEN_EXPIRES = "24h";
 const createToken = (userId) =>
     jwt.sign({ id: userId }, JWT_SECRET, { expiresIn: TOKEN_EXPIRES });
 
-// REGISTER
+
 export async function registerUser(req, res) {
     const { name, email, password } = req.body;
     if (!name || !email || !password) {
